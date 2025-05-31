@@ -1,0 +1,24 @@
+# This is a basic workflow to help you get started with Actions
+
+
+name: Run BlazeMeter Test
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  run-blazemeter-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Run BlazeMeter Test
+        uses: Blazemeter/github-action@v8.4
+        with:
+          apiKey: ${{ secrets.BLAZEMETER_API_KEY }}
+          apiSecret: ${{ secrets.BLAZEMETER_API_SECRET }}
+          testID: "CartFacts-API Test"
+          showTailLog: true

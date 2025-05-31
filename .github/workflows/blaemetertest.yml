@@ -4,9 +4,10 @@
 name: Run BlazeMeter Test
 
 on:
-  push:
-    branches:
-      - main
+   workflow_dispatch:
+  #push:
+   # branches:
+     # - main
 
 jobs:
   run-blazemeter-test:

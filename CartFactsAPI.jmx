@@ -50,6 +50,10 @@
           </hashTree>
         </hashTree>
       </hashTree>
+      <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer">
+        <stringProp name="ConstantTimer.delay">3000</stringProp>
+      </ConstantTimer>
+      <hashTree/>
       <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree">
         <boolProp name="ResultCollector.error_logging">false</boolProp>
         <objProp>

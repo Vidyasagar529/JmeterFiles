@@ -21,5 +21,5 @@ jobs:
         with:
           apiKey: ${{ secrets.BLAZEMETER_API_KEY }}
           apiSecret: ${{ secrets.BLAZEMETER_API_SECRET }}
-          testID: "CartFacts-API Test"
+          testID: "14816243"
           showTailLog: true
